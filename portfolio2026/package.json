@@ -1,13 +1,14 @@
 {
   "name": "portfolio2026",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "homepage": "https://alexis-arch.github.io/Portfolio-2026/",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "start": "vite",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",
